@@ -121,3 +121,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+
+AUTH_USER_MODEL = 'profiles_api.UserProfile'
+# 디폴트 대신 내가 만든 모델을 써라
+# 바꿀 대상(모델) = '새모델이있는앱.모델이름'
