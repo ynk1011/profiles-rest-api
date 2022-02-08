@@ -123,5 +123,5 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 AUTH_USER_MODEL = 'profiles_api.UserProfile'
-# 디폴트 대신 내가 만든 모델을 써라
-# 바꿀 대상(모델) = '새모델이있는앱.모델이름'
+# 디폴트 대신 내가 만든 커스텀모델을 써라
+# 바꿀 대상(모델) = '(커스텀모델이있는앱이름).커스텀모델이름'
