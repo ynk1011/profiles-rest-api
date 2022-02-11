@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'l^9*alij2^n%+j7ttk$ng4rwfjj(*nros57gr4@v^c(2-2$8r#'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = bool(int(environ.get('DEBUG', 1)))
 
 ALLOWED_HOSTS = []
 
@@ -125,3 +125,6 @@ STATIC_URL = '/static/'
 AUTH_USER_MODEL = 'profiles_api.UserProfile'
 # 디폴트 대신 내가 만든 커스텀모델을 써라
 # 바꿀 대상(모델) = '(커스텀모델이있는앱이름).커스텀모델이름'
+
+
+STATIC_ROOT = 'static/'
